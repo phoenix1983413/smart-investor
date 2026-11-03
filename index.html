@@ -12,15 +12,21 @@
 </head>
 <body>
 <div class="wrap">
-<nav class="topnav"><span class="logo">SHUFANG · 书房</span><span><a href="#vol-i">开始阅读 ↓</a></span></nav>
+<nav class="topnav"><span class="logo">SHUFANG · 书房</span><span><a href="#shelf-start">开始阅读 ↓</a></span></nav>
   <header class="hero">
-    <h1>书房<span class="dot">·</span>书架</h1>
-    <p class="desc">从商业哲学到智能架构，从人生智慧到产品方案——这里是我的阅读地图与知识图谱。</p>
-    <div class="stats">
-      <div><div class="num">23</div><div class="lbl">知识页面</div></div>
-      <div><div class="num">5</div><div class="lbl">分类领域</div></div>
+    <div>
+      <h1>书房<span class="dot">·</span>书架</h1>
+      <p class="desc">从商业哲学到智能架构，从人生智慧到产品方案——这里是我的阅读地图与知识图谱。</p>
+      <div class="stats">
+        <div><div class="num">23</div><div class="lbl">知识页面</div></div>
+        <div><div class="num">5</div><div class="lbl">分类领域</div></div>
+        <div><div class="num">9</div><div class="lbl">已精读</div></div>
+        <div><div class="num">14</div><div class="lbl">笔记待补</div></div>
+      </div>
     </div>
+    <div class="hero3d"><canvas id="shelf3d" data-shelf='["#a8452f", "#a8452f", "#a8452f", "#2d4a3a", "#2d4a3a", "#2d4a3a", "#2d4a3a", "#2d4a3a", "#2d4a3a", "#2d4a3a", "#2d4a3a", "#2f4858", "#2f4858", "#2f4858", "#2f4858", "#2f4858", "#2f4858", "#8a6d3b", "#5b4a6b", "#5b4a6b", "#5b4a6b", "#5b4a6b", "#5b4a6b"]' aria-hidden="true"></canvas></div>
   </header>
+  <div id="shelf-start"></div>
   <div class="volhead">
     <span class="vol">VOL. I</span>
     <h2>文学与哲学</h2>
@@ -30,19 +36,25 @@
       <a class="card" href="books/tianmu-hongchen.html">
         <span class="tag">豆豆 · 小说</span>
         <h3>天幕红尘</h3>
-        <p class="blurb">叶子农的“见路不走”哲学——一切从实际出发，不被经验和教条束缚。商业与人生的深层思辨。</p>
+        <p class="blurb">一个人把“实事求是”拆成可执行的判断，在商业谈判、信仰冲撞与个人选择里反复验证。小说不评判人物，只把各自的条件摊开，让结果自己说话。</p>
+        <p class="value"><b>适合</b>适合厌倦成功学、想把“别人的经验”还原成“自己的条件”的人。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/yaoyuan-jiushizhu.html">
         <span class="tag">豆豆 · 小说</span>
         <h3>遥远的救世主</h3>
-        <p class="blurb">“文化属性决定命运”——强势文化造就强者，弱势文化造就弱者。丁元英的商战智慧与文化反思。</p>
+        <p class="blurb">一场以扶贫为名的商业实验，检验一个判断：人能靠自己站起来，还是只能等救世主。故事真正的变量不是资金与策略，而是参与者头脑里的“文化属性”。</p>
+        <p class="value"><b>适合</b>适合带团队、做教育、做增长的人，用来照见自己身上“等、靠、要”的部分。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/ganfa.html">
         <span class="tag">稻盛和夫 · 经营哲学</span>
         <h3>干法</h3>
-        <p class="blurb">工作是修行——稻盛和夫的“六项精进”与人生方程式。热爱工作，付出不亚于任何人的努力。</p>
+        <p class="blurb">把工作当作修行的方法论：先解释为什么值得投入，再给出怎么投入的具体动作。论据几乎全部来自京瓷的经营实践，因此它更接近操作手册，而非励志读物。</p>
+        <p class="value"><b>适合</b>适合处在职业倦怠期的人，也适合需要给团队重建工作意义的管理者。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
   </div>
@@ -55,49 +67,65 @@
       <a class="card" href="books/fubaba-qiongbaba.html">
         <span class="tag">罗伯特·清崎 · 财商启蒙</span>
         <h3>富爸爸穷爸爸</h3>
-        <p class="blurb">资产 vs 负债——重新定义财富认知。穷人为钱工作，富人让钱为自己工作。现金流思维与财务自由之路。</p>
+        <p class="blurb">用两个父亲的对照，把“资产”与“负债”还原成现金流方向的问题。全书真正提供的不是理财技巧，而是一个判断消费与投资的分类器。</p>
+        <p class="value"><b>适合</b>适合刚开始管钱、分不清“买房算资产还是负债”的人，作为财商入门第一本。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/fubaba-caiwuziyou.html">
-        <span class="tag">罗伯特·清崎 · 财务自由</span>
+        <span class="tag">罗伯特·清崎 · 收入结构</span>
         <h3>穷爸爸富爸爸 · 财务自由之路</h3>
-        <p class="blurb">两位父亲的财富观碰撞。ESBI 四象限、被动收入与资产积累——跳出“老鼠赛跑”的财富觉醒之路。</p>
+        <p class="blurb">把现金流观点升级成一张位置图：ESBI 四象限。它回答的不是“怎么赚钱”，而是“你的收入属于哪种结构、该往哪边迁移”。</p>
+        <p class="value"><b>适合</b>适合想设计收入结构转型路径的职场人；已有资产的人用来检查收入是否过度依赖时间。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/manbu-huaerjie.html">
         <span class="tag">伯顿·马尔基尔 · 投资经典</span>
         <h3>漫步华尔街</h3>
-        <p class="blurb">有效市场假设与指数投资——为什么大多数基金经理跑不赢大盘？理性投资的基石与资产配置智慧。</p>
+        <p class="blurb">用三百年投机史与大量实证，论证一个不讨喜的结论：多数主动管理在费后跑不赢低成本指数。后半部把结论落成按年龄与风险承受力设定的配置规则。</p>
+        <p class="value"><b>适合</b>适合准备长期定投、又常被“择时”诱惑的人；也适合用来校准对基金经理的期待。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/manbu-suiji-manbu.html">
         <span class="tag">伯顿·马尔基尔 · 投资理论</span>
         <h3>漫步华尔街 · 随机漫步智慧</h3>
-        <p class="blurb">随机漫步理论下的投资哲学。技术分析 vs 基本面分析、个股选择与指数基金——穿越市场噪音的理性之声。</p>
+        <p class="blurb">围绕原著方法论的专题笔记，把技术分析与基本面分析的百年之争放到同一张桌上对照。落点在行为金融：多数亏损来自决策习惯，而非分析工具。</p>
+        <p class="value"><b>适合</b>适合已读过原著、想单独梳理“行为偏差如何侵蚀收益”的读者。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/qiongchali-baodian.html">
         <span class="tag">查理·芒格 · 投资哲学</span>
         <h3>穷查理宝典 · 深度解读</h3>
-        <p class="blurb">多元思维模型与逆向思考——查理·芒格的普世智慧。人类误判心理学、能力圈与价值投资的终极心法。</p>
+        <p class="blurb">芒格把投资决策还原成一套跨学科的错误预防系统：多元思维模型、逆向思考、能力圈。全书重心不在“如何赚”，而在“如何少犯大错”。</p>
+        <p class="value"><b>适合</b>适合做长期决策的人——投资、用人、选方向；尤其适合读腻了成功学、想换一套校验机制的人。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/quanqiu-touzi-jihui.html">
         <span class="tag">时寒冰 · 宏观趋势</span>
         <h3>全球视野下的投资机会</h3>
-        <p class="blurb">未来二十年经济大势研判。全球资产配置、地缘政治风险与产业转移——宏观视角下的财富保卫战。</p>
+        <p class="blurb">以货币、贸易、资源、人口为线索，推演 AI 崛起、新能源革命、产业转移与货币体系重构四条主趋势。全书由“势”到“道”再到“术”，逐章落到黄金、白银、核电、美股、美债、中药材、小金属等具体方向。</p>
+        <p class="value"><b>适合</b>适合已有一定资产、需要自上而下判断配置方向的人；不适合找短期交易信号的人。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/nawaer-baodian.html">
         <span class="tag">埃里克·乔根森 · 财富哲学</span>
         <h3>纳瓦尔宝典</h3>
-        <p class="blurb">财富创造与人生智慧的完美融合。杠杆、专属知识、判断力——构建不靠出卖时间的收入模型。</p>
+        <p class="blurb">把财富拆成一个可复用的公式：专长 × 责任 × 杠杆，并指出出租时间无法致富。后半部转向幸福，主张它是一项可以像健身一样训练的技能。</p>
+        <p class="value"><b>适合</b>适合有一技之长、想把能力变成可规模化产品的人。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card" href="books/intelligent-investor.html">
         <span class="tag">本杰明·格雷厄姆 · 价值投资圣经</span>
         <h3>聪明的投资者</h3>
-        <p class="blurb">价值投资之父的安全边际、市场先生与防御型投资策略——巴菲特誉为“投资圣经”的传世之作。</p>
+        <p class="blurb">用三条原则重构投资决策：区分投资与投机、把市场当作情绪化的报价者、只在高安全边际时买入。它不提供预测方法，而提供一套判断出错时仍能活下来的规则。</p>
+        <p class="value"><b>适合</b>适合所有长期资金的管理者；防御型投资者只需落实股债配比与指数化，也能拿到大部分收益。</p>
+        <div class="cardfoot"><span class="status">已精读</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
   </div>
@@ -110,37 +138,49 @@
       <a class="card todo-flag" href="books/jiagou-jinjie-ai.html">
         <span class="tag">张伟伟 · 技术架构</span>
         <h3>架构能力进阶 + AI 技术落地后端</h3>
-        <p class="blurb">从单体到 AI 架构的五阶段演进；六层 AI 架构设计，20+ 实战案例。AI 时代后端工程师的进阶路线。</p>
+        <p class="blurb">把后端架构的演进拆成五个阶段，再给出 AI 能力接入既有系统的六层分层蓝图。重点不在名词，而在每个阶段引入的复杂度与对应的治理手段。</p>
+        <p class="value"><b>适合</b>适合有三年以上后端经验、正在把 LLM 接进生产系统的工程师。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/agentic-engineering.html">
         <span class="tag">学习路径 · 技术体系</span>
         <h3>Agentic Engineering 架构师学习路径</h3>
-        <p class="blurb">智能体工程的完整学习体系：四层核心技术架构，四阶段学习路径（P1-P4），9 项关键技能。</p>
+        <p class="blurb">一份用四层技术架构切分知识域、用 P1–P4 安排节奏的 Agent 工程路线图。它把“会调 API”与“能设计 Agent 系统”之间的差距拆成可验收的阶段目标。</p>
+        <p class="value"><b>适合</b>适合想系统补齐 Agent 工程能力、但缺乏学习路径的开发者。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/agent-design-patterns.html">
         <span class="tag">设计模式 · 技术总纲</span>
         <h3>Agent 设计模式</h3>
-        <p class="blurb">AI Agent 的核心设计模式解析。从感知-推理-行动循环到多 Agent 协同，构建智能系统的架构范式。</p>
+        <p class="blurb">把软件工程的设计模式思路迁移到 Agent：可靠系统几乎都收敛到“感知—推理—行动”这一个闭环，其余模式都是它的变体。围绕闭环拆解工具调用、记忆分层与多 Agent 协同。</p>
+        <p class="value"><b>适合</b>适合已经跑通过 Demo、需要把 Agent 做稳的工程师。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/agent-six-patterns.html">
         <span class="tag">工程化指南 · 深度</span>
         <h3>Agent 设计模式 · 六大模式工程化指南</h3>
-        <p class="blurb">从理论到工程落地的六大 Agent 设计模式。涵盖 ReAct、Tool-use、Multi-Agent 等核心范式。</p>
+        <p class="blurb">同一主题的工程化版本：不讲模式定义，讲在真实系统里怎么选、怎么组合、什么时候不该用。核心主张是先让单 Agent 走通，再按瓶颈逐个叠加模式。</p>
+        <p class="value"><b>适合</b>适合正在做 Agent 技术选型，或系统已出现稳定性问题的团队。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/agent-core-concepts.html">
         <span class="tag">概念手册 · 基础</span>
         <h3>Agent 核心概念解析手册</h3>
-        <p class="blurb">系统梳理 AI Agent 的核心概念体系：感知、推理、规划、记忆、工具使用等基础概念全面解析。</p>
+        <p class="blurb">把 Agent 领域的常用术语放进同一个框架里定义清楚，作为团队对齐口径的词典。每个概念都指向一个工程问题：感知的输入边界、记忆的写入与遗忘、自主性的分级。</p>
+        <p class="value"><b>适合</b>适合需要给团队做概念对齐，或刚进入该领域的工程师。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/claude-code.html">
         <span class="tag">CLAUDE CODE · 工具</span>
         <h3>Claude Code 架构与应用总结</h3>
-        <p class="blurb">Claude Code 的架构设计与工程应用。AI 编程助手的内部机制与最佳实践指南。</p>
+        <p class="blurb">把命令行编程助手当作一个 Agent 系统来拆：任务理解、代码库探索、计划、执行、自我验证的循环，以及权限模型如何界定它的能力边界。落点是团队内的使用规范。</p>
+        <p class="value"><b>适合</b>适合要把 AI 编程助手引入研发流程的技术负责人。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
   </div>
@@ -153,7 +193,9 @@
       <a class="card todo-flag" href="books/jianghushuo.html">
         <span class="tag">人物分析 · 财经</span>
         <h3>姜胡说 · 财经自媒体人分析</h3>
-        <p class="blurb">抖音 300 万粉丝财经博主全面解析。知识星球 7 年运营、三本著作、2100 万获赞的内容创业方法论。</p>
+        <p class="blurb">对一位长跑型知识博主的商业拆解：以数百万抖音粉丝作公域入口，用《价值心法》、付费专栏与运营七年以上的知识星球承接不同付费意愿。可复用的是“先想清楚卖什么，再决定拍什么”的倒推结构。</p>
+        <p class="value"><b>适合</b>适合做知识付费、个人 IP 或内容型产品的人，用来对照自己的产品分层与转化路径。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
   </div>
@@ -166,35 +208,47 @@
       <a class="card todo-flag" href="books/jingyong-robot.html">
         <span class="tag">产品方案 · 警用装备</span>
         <h3>警用机器人 · 攻关方案</h3>
-        <p class="blurb">空地协同、多 Agent 协同作战体系。空中无人机 + 地面机器人 + 云端大脑，警用机器人系统五方攻关方案。</p>
+        <p class="blurb">面向警用场景的五方联合攻关方案概览：空中无人机负责广域感知，地面机器人负责抵近处置，云端负责情报融合与全局调度。核心是多 Agent 架构下的任务分配与状态共享。</p>
+        <p class="value"><b>适合</b>适合需要了解空地协同系统总体框架的内部读者；对外仅展示概览层级。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/yingji-zhihui.html">
         <span class="tag">产品落地页 · 应急指挥</span>
         <h3>应急指挥调度系统</h3>
-        <p class="blurb">面向应急场景的指挥调度系统产品展示。从接警到处置全流程可视化的智慧应急解决方案。</p>
+        <p class="blurb">应急场景下的指挥调度产品页：把接警、研判、调度、处置、复盘五个环节收进同一张图。价值主张是让指挥员在一个界面上完成态势判断与资源投放。</p>
+        <p class="value"><b>适合</b>适合应急管理条线的业务与产品读者。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/yingji-zhihui-v2.html">
         <span class="tag">产品落地页 V2 · 应急指挥</span>
         <h3>应急指挥 · 落地页 V2</h3>
-        <p class="blurb">应急指挥调度系统的迭代升级版展示页。优化后的交互体验与视觉呈现，更贴合实战场景。</p>
+        <p class="blurb">同一产品的第二版落地页，改动集中在信息层级与使用动线：按实战顺序重排内容，并兼顾指挥大屏与移动端两种观看场景。</p>
+        <p class="value"><b>适合</b>适合对照 V1 查看设计决策演进的读者。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/petdog.html">
         <span class="tag">AI 产品 · 儿童陪伴</span>
         <h3>PetDog · 会长大的小狗</h3>
-        <p class="blurb">8-12 岁儿童桌面陪伴小狗。三层记忆架构、七维人格演化，30 天养成一只专属陪伴小狗。</p>
+        <p class="blurb">面向 8–12 岁儿童的桌面 AI 陪伴产品：用三层记忆架构与七维人格演化，让一只小狗在约 30 天的互动里逐步形成独特性格。产品节奏本身即是叙事——“长大”替代了“升级”。</p>
+        <p class="value"><b>适合</b>适合关注儿童 AI 硬件、情感计算与长期留存设计的产品与研发人员。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
       <a class="card todo-flag" href="books/circle-guard.html">
         <span class="tag">低空安防 · 战术情报</span>
         <h3>无人机圈层防控平台 · CIRCLE-GUARD</h3>
-        <p class="blurb">低空安全战术情报页。圈层态势 + 多层打击 + 反制助手 3 大模块。AI 大模型驱动的三层立体防控体系。</p>
+        <p class="blurb">低空安防的战术情报平台，按圈层组织防御纵深：远端预警、中端跟踪、近端处置。三个模块分别是圈层态势、多层打击与 AI 反制助手。</p>
+        <p class="value"><b>适合</b>适合低空安防、反无人机方向的产品与方案读者。</p>
+        <div class="cardfoot"><span class="status pending">笔记待补全</span><span class="score pending">评分 · 待补充</span></div>
         <span class="go">阅读全文 →</span>
       </a>
   </div>
 <footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
 </div>
+<script src="assets/three.min.js" defer></script>
+<script src="assets/scene.js" defer></script>
 </body>
 </html>

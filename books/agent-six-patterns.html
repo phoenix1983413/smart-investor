@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="从理论到工程落地的六大 Agent 设计模式。涵盖 ReAct、Tool-use、Multi-Agent 等核心范式。">
+<meta name="description" content="同一主题的工程化版本：不讲模式定义，讲在真实系统里怎么选、怎么组合、什么时候不该用。核心主张是先让单 Agent 走通，再按瓶颈逐个叠加模式。">
 <title>Agent 设计模式 · 六大模式工程化指南 | 我的书房</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,24 @@
 <body>
 <div class="wrap">
 <nav class="topnav"><span class="logo">SHUFANG · 书房</span><span>VOL. III · AI 与技术</span></nav>
-<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="agent-design-patterns.html">← Agent 设计模式</a></span><span><a class="back" href="../index.html">⌂ 书房首页</a></span><span><a href="agent-core-concepts.html">Agent 核心概念解析手册 →</a></span></div></nav>
+<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="agent-design-patterns.html">← Agent 设计模式</a></span><span><a class="back" href="../index.html">书房首页</a></span><span><a href="agent-core-concepts.html">Agent 核心概念解析手册 →</a></span></div></nav>
   <header class="bookhead">
-    <div class="tag">工程化指南 · 深度</div>
-    <h1>Agent 设计模式 · 六大模式工程化指南</h1>
-    <div class="meta">作者：<b>工程化指南</b> · 所属分类：<b>AI 与技术</b></div>
+    <div class="bookhead-grid">
+      <div>
+        <div class="tag">工程化指南 · 深度</div>
+        <h1>Agent 设计模式 · 六大模式工程化指南</h1>
+        <div class="meta">作者：<b>工程化指南</b> · 所属分类：<b>AI 与技术</b></div>
+        <p class="lede">同一主题的工程化版本：不讲模式定义，讲在真实系统里怎么选、怎么组合、什么时候不该用。核心主张是先让单 Agent 走通，再按瓶颈逐个叠加模式。</p>
+      </div>
+      <div class="bh3d"><canvas id="book3d" data-tint="#2f4858" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="bookmeta">
+      <div class="mi"><span class="mk">作者</span><span class="mv">工程化指南</span></div>
+      <div class="mi"><span class="mk">分类标签</span><span class="mv">AI 与技术 · 工程化指南 · 深度</span></div>
+      <div class="mi span2"><span class="mk">阅读价值 / 适合人群</span><span class="mv">适合正在做 Agent 技术选型，或系统已出现稳定性问题的团队。</span></div>
+      <div class="mi"><span class="mk">阅读状态</span><span class="mv">笔记待补全</span></div>
+      <div class="mi"><span class="mk">评分</span><span class="mv muted">待补充</span></div>
+    </div>
   </header>
   <div class="todo-note">⚠ 本篇部分内容为占位框架，凡标注「待补充」的条目均未经确认，不做臆断；后续补充原始资料后完善。</div>
   <section class="block">
@@ -29,12 +42,12 @@
   <section class="block">
     <h2>主要章节与观点梳理</h2>
     <ul class="pt-list">
-      <li><b>ReAct</b><span>推理与行动交错：让模型“边想边做”，每步先输出思考再调用工具，可解释性与纠错能力都更强。</span></li>
+      <li><b>ReAct</b><span>推理与行动交错：让模型边想边做，每步先输出思考再调用工具，可解释性与纠错能力更强。</span></li>
       <li><b>工具使用</b><span>从函数签名设计、参数校验到错误兜底的完整工程规范——工具质量决定 Agent 上限。</span></li>
-      <li><b>规划与执行分离</b><span>Plan-and-Execute：先产出任务计划，再逐步执行，适合长任务；需要处理计划失效后的重规划。</span></li>
-      <li><b>反思模式</b><span>执行后自我评审（Reflection），把错误反馈进下一轮——用额外推理成本换质量，适合高价值产出场景。</span></li>
-      <li><b>多 Agent 协同</b><span>角色分工（如规划者/执行者/评审者）+ 消息传递协议；警惕“多 Agent 表演”，协同必须有明确的信息流。</span></li>
-      <li><b>工程化选型</b><span>模式组合 &gt; 单模式炫技：先单 Agent 走通，再按瓶颈逐个引入模式。</span></li>
+      <li><b>规划与执行分离</b><span>Plan-and-Execute：先产出任务计划再逐步执行，适合长任务；需要处理计划失效后的重规划。</span></li>
+      <li><b>反思模式</b><span>执行后自我评审（Reflection），把错误反馈进下一轮——用额外推理成本换质量，适合高价值产出。</span></li>
+      <li><b>多 Agent 协同</b><span>角色分工（规划者/执行者/评审者）+ 消息传递协议；警惕“多 Agent 表演”，协同必须有明确的信息流。</span></li>
+      <li><b>工程化选型</b><span>模式组合优于单模式炫技：先单 Agent 走通，再按瓶颈逐个引入模式。</span></li>
     </ul>
   </section>
 
@@ -48,14 +61,16 @@
   <section class="block">
     <h2>可落地的实践启示</h2>
     <ol class="act-list">
-      <li>用 ReAct 作为默认起点，遇到长任务再加规划、遇到质量问题再加反思。</li>
-      <li>为每个工具写清晰的入参出参与失败语义，Agent 的稳定性大半在这里。</li>
-      <li>多 Agent 只在职责真正冲突/上下文真的装不下时引入。</li>
+      <li>用 ReAct 作为默认起点，遇到长任务再加规划，遇到质量问题再加反思。</li>
+      <li>为每个工具写清入参、出参与失败语义，Agent 的稳定性大半在这里。</li>
+      <li>多 Agent 只在职责真正冲突、上下文真的装不下时引入。</li>
       <li>对照原文补全六大模式的完整定义与示例代码。</li>
     </ol>
   </section>
 
 <footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
 </div>
+<script src="../assets/three.min.js" defer></script>
+<script src="../assets/scene.js" defer></script>
 </body>
 </html>

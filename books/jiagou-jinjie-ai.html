@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="从单体到 AI 架构的五阶段演进；六层 AI 架构设计，20+ 实战案例。AI 时代后端工程师的进阶路线。">
+<meta name="description" content="把后端架构的演进拆成五个阶段，再给出 AI 能力接入既有系统的六层分层蓝图。重点不在名词，而在每个阶段引入的复杂度与对应的治理手段。">
 <title>架构能力进阶 + AI 技术落地后端 | 我的书房</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,23 +13,36 @@
 <body>
 <div class="wrap">
 <nav class="topnav"><span class="logo">SHUFANG · 书房</span><span>VOL. III · AI 与技术</span></nav>
-<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="intelligent-investor.html">← 聪明的投资者</a></span><span><a class="back" href="../index.html">⌂ 书房首页</a></span><span><a href="agentic-engineering.html">Agentic Engineering 架构师学习路径 →</a></span></div></nav>
+<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="intelligent-investor.html">← 聪明的投资者</a></span><span><a class="back" href="../index.html">书房首页</a></span><span><a href="agentic-engineering.html">Agentic Engineering 架构师学习路径 →</a></span></div></nav>
   <header class="bookhead">
-    <div class="tag">张伟伟 · 技术架构</div>
-    <h1>架构能力进阶 + AI 技术落地后端</h1>
-    <div class="meta">作者：<b>张伟伟</b> · 所属分类：<b>AI 与技术</b></div>
+    <div class="bookhead-grid">
+      <div>
+        <div class="tag">张伟伟 · 技术架构</div>
+        <h1>架构能力进阶 + AI 技术落地后端</h1>
+        <div class="meta">作者：<b>张伟伟</b> · 所属分类：<b>AI 与技术</b></div>
+        <p class="lede">把后端架构的演进拆成五个阶段，再给出 AI 能力接入既有系统的六层分层蓝图。重点不在名词，而在每个阶段引入的复杂度与对应的治理手段。</p>
+      </div>
+      <div class="bh3d"><canvas id="book3d" data-tint="#2f4858" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="bookmeta">
+      <div class="mi"><span class="mk">作者</span><span class="mv">张伟伟</span></div>
+      <div class="mi"><span class="mk">分类标签</span><span class="mv">AI 与技术 · 张伟伟 · 技术架构</span></div>
+      <div class="mi span2"><span class="mk">阅读价值 / 适合人群</span><span class="mv">适合有三年以上后端经验、正在把 LLM 接进生产系统的工程师。</span></div>
+      <div class="mi"><span class="mk">阅读状态</span><span class="mv">笔记待补全</span></div>
+      <div class="mi"><span class="mk">评分</span><span class="mv muted">待补充</span></div>
+    </div>
   </header>
   <div class="todo-note">⚠ 本篇部分内容为占位框架，凡标注「待补充」的条目均未经确认，不做臆断；后续补充原始资料后完善。</div>
   <section class="block">
     <h2>核心内容总结</h2>
-    <p>面向后端工程师的架构进阶体系：从传统单体的演进史讲起，到 AI 时代后端架构的新形态——如何把 LLM 能力工程化地接进既有系统。</p>
+    <p>面向后端工程师的架构进阶体系：从单体的演进史讲起，到 AI 时代后端架构的新形态——如何把 LLM 能力工程化地接进既有系统。</p>
     <p>骨架是“五阶段演进 + 六层 AI 架构”：前者帮助定位自己与系统当前所处的位置，后者给出 AI 落地的分层蓝图（数据接入、模型服务、应用编排等）。</p>
   </section>
 
   <section class="block">
     <h2>主要章节与观点梳理</h2>
     <ul class="pt-list">
-      <li><b>五阶段演进</b><span>单体 → 分布式 → 微服务 → 云原生 → AI 原生：每个阶段解决的问题与引入的复杂度不同，进阶的关键是理解演进动因而非追逐名词。</span></li>
+      <li><b>五阶段演进</b><span>单体 → 分布式 → 微服务 → 云原生 → AI 原生：每个阶段解决的问题与引入的复杂度不同，关键是理解演进动因而非追逐名词。</span></li>
       <li><b>六层 AI 架构</b><span>自下而上：算力与基础设施 → 数据层 → 模型层 → 能力层（RAG/工具）→ 应用编排层 → 场景应用层（具体分层命名以原课程为准，待补充）。</span></li>
       <li><b>20+ 实战案例</b><span>案例覆盖检索增强、Agent 接入、模型网关等典型场景，具体清单待补充。</span></li>
       <li><b>工程师能力迁移</b><span>AI 时代后端的核心增量：Prompt 工程、向量检索、模型服务化、评测与可观测。</span></li>
@@ -47,7 +60,7 @@
     <h2>可落地的实践启示</h2>
     <ol class="act-list">
       <li>对照六层架构给自己的系统画一张现状图，标出每层的成熟度。</li>
-      <li>挑一个最小场景（如 FAQ 问答）走通“数据→检索→生成”全链路。</li>
+      <li>挑一个最小场景（如 FAQ 问答）走通“数据 → 检索 → 生成”全链路。</li>
       <li>为 AI 调用建立评测与监控，先于规模化上线。</li>
       <li>向原作者/原文补全 20+ 案例清单，沉淀到本页。</li>
     </ol>
@@ -55,5 +68,7 @@
 
 <footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
 </div>
+<script src="../assets/three.min.js" defer></script>
+<script src="../assets/scene.js" defer></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AI Agent 的核心设计模式解析。从感知-推理-行动循环到多 Agent 协同，构建智能系统的架构范式。">
+<meta name="description" content="把软件工程的设计模式思路迁移到 Agent：可靠系统几乎都收敛到“感知—推理—行动”这一个闭环，其余模式都是它的变体。围绕闭环拆解工具调用、记忆分层与多 Agent 协同。">
 <title>Agent 设计模式 | 我的书房</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,24 @@
 <body>
 <div class="wrap">
 <nav class="topnav"><span class="logo">SHUFANG · 书房</span><span>VOL. III · AI 与技术</span></nav>
-<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="agentic-engineering.html">← Agentic Engineering 架构师学习路径</a></span><span><a class="back" href="../index.html">⌂ 书房首页</a></span><span><a href="agent-six-patterns.html">Agent 设计模式 · 六大模式工程化指南 →</a></span></div></nav>
+<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="agentic-engineering.html">← Agentic Engineering 架构师学习路径</a></span><span><a class="back" href="../index.html">书房首页</a></span><span><a href="agent-six-patterns.html">Agent 设计模式 · 六大模式工程化指南 →</a></span></div></nav>
   <header class="bookhead">
-    <div class="tag">设计模式 · 技术总纲</div>
-    <h1>Agent 设计模式</h1>
-    <div class="meta">作者：<b>设计模式</b> · 所属分类：<b>AI 与技术</b></div>
+    <div class="bookhead-grid">
+      <div>
+        <div class="tag">设计模式 · 技术总纲</div>
+        <h1>Agent 设计模式</h1>
+        <div class="meta">作者：<b>设计模式</b> · 所属分类：<b>AI 与技术</b></div>
+        <p class="lede">把软件工程的设计模式思路迁移到 Agent：可靠系统几乎都收敛到“感知—推理—行动”这一个闭环，其余模式都是它的变体。围绕闭环拆解工具调用、记忆分层与多 Agent 协同。</p>
+      </div>
+      <div class="bh3d"><canvas id="book3d" data-tint="#2f4858" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="bookmeta">
+      <div class="mi"><span class="mk">作者</span><span class="mv">设计模式</span></div>
+      <div class="mi"><span class="mk">分类标签</span><span class="mv">AI 与技术 · 设计模式 · 技术总纲</span></div>
+      <div class="mi span2"><span class="mk">阅读价值 / 适合人群</span><span class="mv">适合已经跑通过 Demo、需要把 Agent 做稳的工程师。</span></div>
+      <div class="mi"><span class="mk">阅读状态</span><span class="mv">笔记待补全</span></div>
+      <div class="mi"><span class="mk">评分</span><span class="mv muted">待补充</span></div>
+    </div>
   </header>
   <div class="todo-note">⚠ 本篇部分内容为占位框架，凡标注「待补充」的条目均未经确认，不做臆断；后续补充原始资料后完善。</div>
   <section class="block">
@@ -32,7 +45,7 @@
       <li><b>感知-推理-行动循环</b><span>Agent 的最小闭环：获取环境信息 → LLM 推理决策 → 执行动作 → 观察结果再进入下一轮。所有模式都是这个循环的变体。</span></li>
       <li><b>工具调用</b><span>把模型“会说不会做”补齐为“会做”：函数注册、参数生成、结果回填，是 Agent 与真实世界交互的通道。</span></li>
       <li><b>记忆分层</b><span>工作记忆（上下文窗口）、短期记忆（会话状态）、长期记忆（向量库/知识图谱）——分层设计决定成本与能力上限。</span></li>
-      <li><b>多 Agent 协同</b><span>当单 Agent 上下文与职责过载时，按角色/流程拆分为多个 Agent 协作；代价是通信复杂度与一致性挑战。</span></li>
+      <li><b>多 Agent 协同</b><span>当单 Agent 上下文与职责过载时，按角色/流程拆分协作；代价是通信复杂度与一致性挑战。</span></li>
     </ul>
   </section>
 
@@ -46,7 +59,7 @@
   <section class="block">
     <h2>可落地的实践启示</h2>
     <ol class="act-list">
-      <li>用最小闭环写一个能“观察-决策-执行”的 Demo，再谈框架选型。</li>
+      <li>用最小闭环写一个能“观察—决策—执行”的 Demo，再谈框架选型。</li>
       <li>为每个 Agent 明确记忆策略：什么进上下文、什么进向量库、什么丢弃。</li>
       <li>工具权限分级：高危操作强制人工确认。</li>
       <li>对照本篇补全原文的完整模式清单。</li>
@@ -55,5 +68,7 @@
 
 <footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
 </div>
+<script src="../assets/three.min.js" defer></script>
+<script src="../assets/scene.js" defer></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="空地协同、多 Agent 协同作战体系。空中无人机 + 地面机器人 + 云端大脑，警用机器人系统五方攻关方案。">
+<meta name="description" content="面向警用场景的五方联合攻关方案概览：空中无人机负责广域感知，地面机器人负责抵近处置，云端负责情报融合与全局调度。核心是多 Agent 架构下的任务分配与状态共享。">
 <title>警用机器人 · 攻关方案 | 我的书房</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,24 @@
 <body>
 <div class="wrap">
 <nav class="topnav"><span class="logo">SHUFANG · 书房</span><span>VOL. V · 产品与方案</span></nav>
-<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="jianghushuo.html">← 姜胡说 · 财经自媒体人分析</a></span><span><a class="back" href="../index.html">⌂ 书房首页</a></span><span><a href="yingji-zhihui.html">应急指挥调度系统 →</a></span></div></nav>
+<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="jianghushuo.html">← 姜胡说 · 财经自媒体人分析</a></span><span><a class="back" href="../index.html">书房首页</a></span><span><a href="yingji-zhihui.html">应急指挥调度系统 →</a></span></div></nav>
   <header class="bookhead">
-    <div class="tag">产品方案 · 警用装备</div>
-    <h1>警用机器人 · 攻关方案</h1>
-    <div class="meta">作者：<b>内部方案</b> · 所属分类：<b>产品与方案</b></div>
+    <div class="bookhead-grid">
+      <div>
+        <div class="tag">产品方案 · 警用装备</div>
+        <h1>警用机器人 · 攻关方案</h1>
+        <div class="meta">作者：<b>内部方案</b> · 所属分类：<b>产品与方案</b></div>
+        <p class="lede">面向警用场景的五方联合攻关方案概览：空中无人机负责广域感知，地面机器人负责抵近处置，云端负责情报融合与全局调度。核心是多 Agent 架构下的任务分配与状态共享。</p>
+      </div>
+      <div class="bh3d"><canvas id="book3d" data-tint="#5b4a6b" aria-hidden="true"></canvas></div>
+    </div>
+    <div class="bookmeta">
+      <div class="mi"><span class="mk">作者</span><span class="mv">内部方案</span></div>
+      <div class="mi"><span class="mk">分类标签</span><span class="mv">产品与方案 · 产品方案 · 警用装备</span></div>
+      <div class="mi span2"><span class="mk">阅读价值 / 适合人群</span><span class="mv">适合需要了解空地协同系统总体框架的内部读者；对外仅展示概览层级。</span></div>
+      <div class="mi"><span class="mk">阅读状态</span><span class="mv">笔记待补全</span></div>
+      <div class="mi"><span class="mk">评分</span><span class="mv muted">待补充</span></div>
+    </div>
   </header>
   <div class="todo-note">⚠ 本篇部分内容为占位框架，凡标注「待补充」的条目均未经确认，不做臆断；后续补充原始资料后完善。</div>
   <section class="block">
@@ -53,5 +66,7 @@
 
 <footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
 </div>
+<script src="../assets/three.min.js" defer></script>
+<script src="../assets/scene.js" defer></script>
 </body>
 </html>
