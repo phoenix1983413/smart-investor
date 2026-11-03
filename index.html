@@ -1,391 +1,200 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="本杰明·格雷厄姆《聪明的投资者》核心思想总结——价值投资之父的安全边际、市场先生与防御型投资策略">
-    <title>《聪明的投资者》| The Intelligent Investor · 价值投资圣经</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="从商业哲学到智能架构，从人生智慧到产品方案——这里是我的阅读地图与知识图谱。">
+<title>我的书房 · 书架</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/book.css">
 </head>
 <body>
-    <!-- HERO -->
-    <header class="hero">
-        <div class="hero-meta">
-            <span class="hero-eyebrow">价值投资圣经 · 第一版 1949 · 修订版 1973</span>
-        </div>
-        <h1 class="hero-title">
-            <span class="hero-title-en">The Intelligent Investor</span>
-            <span class="hero-title-cn">聪明的投资者</span>
-        </h1>
-        <p class="hero-subtitle">本杰明·格雷厄姆 著 · 沃伦·巴菲特 誉为"投资圣经"</p>
-        <div class="hero-byline">
-            <span>— 写给普通人的、不需要预测市场也能赢的投资哲学 —</span>
-        </div>
-        <div class="hero-divider"></div>
-        <div class="hero-stats">
-            <div class="stat"><span class="stat-num">70+</span><span class="stat-label">年经典</span></div>
-            <div class="stat"><span class="stat-num">20</span><span class="stat-label">章论述</span></div>
-            <div class="stat"><span class="stat-num">3</span><span class="stat-label">核心原则</span></div>
-            <div class="stat"><span class="stat-num">∞</span><span class="stat-label">价值</span></div>
-        </div>
-    </header>
-
-    <main class="container">
-
-        <!-- 关于作者 -->
-        <section class="section section-author">
-            <div class="section-head">
-                <span class="section-num">01</span>
-                <h2 class="section-title">关于作者</h2>
-                <span class="section-sub">About the Author</span>
-            </div>
-            <div class="author-card">
-                <div class="author-name">
-                    <h3>本杰明·格雷厄姆</h3>
-                    <span class="author-en">Benjamin Graham · 1894—1976</span>
-                </div>
-                <div class="author-body">
-                    <p>现代金融分析的奠基人，被誉为"价值投资之父"。格雷厄姆在 1929 年大萧条中几乎倾家荡产后，用余生构建出一套<em>不依赖预测、不依赖运气</em>的投资方法论。</p>
-                    <p>他任教于哥伦比亚商学院近三十年，培养出<strong>沃伦·巴菲特</strong>——后者称自己是"格雷厄姆的信徒"，并把老师的方法演化成一生的财富哲学。</p>
-                    <p>本书由他的同事<em>贾森·兹威格</em>在 1973 年修订，融入 1970 年代的市场经验，至今仍是<strong>所有价值投资者必读的第一本书</strong>。</p>
-                </div>
-                <div class="author-titles">
-                    <span class="title-pill">🎓 哥伦比亚大学教授</span>
-                    <span class="title-pill">📈 现代证券分析之父</span>
-                    <span class="title-pill">🛡️ 安全边际创立者</span>
-                    <span class="title-pill">💼 巴菲特之师</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- 核心思想 -->
-        <section class="section section-thesis">
-            <div class="section-head">
-                <span class="section-num">02</span>
-                <h2 class="section-title">核心思想</h2>
-                <span class="section-sub">Core Thesis</span>
-            </div>
-            <div class="pullquote">
-                <p>"投资这门艺术最有意思的部分是——它的成功并不靠智商，靠的是<strong>纪律、耐心和理性</strong>。"</p>
-                <span>— Benjamin Graham</span>
-            </div>
-
-            <div class="principles-grid">
-                <div class="principle-card">
-                    <div class="principle-num">I</div>
-                    <h3>投资 vs 投机</h3>
-                    <p>投资是经过<strong>深入分析</strong>、承诺<strong>本金安全</strong>、并获得<strong>合理回报</strong>的行为；投机则是在赌短期价格波动。聪明的投资者永远<em>站在投资这一边</em>。</p>
-                </div>
-                <div class="principle-card">
-                    <div class="principle-num">II</div>
-                    <h3>市场先生</h3>
-                    <p>把市场想象成一位<strong>情绪化的"市场先生"</strong>，每天给你报价。他时而贪婪，时而恐惧。你要<em>利用他的情绪</em>，而不是被他牵着走。</p>
-                </div>
-                <div class="principle-card">
-                    <div class="principle-num">III</div>
-                    <h3>安全边际</h3>
-                    <p>这是格雷厄姆投资哲学的<strong>基石</strong>——只在价格<em>远远低于</em>内在价值时买入。即使判断错了，也能少亏；判断对了，大赚。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 关键概念深度解读 -->
-        <section class="section section-concepts">
-            <div class="section-head">
-                <span class="section-num">03</span>
-                <h2 class="section-title">四个关键概念</h2>
-                <span class="section-sub">Key Concepts</span>
-            </div>
-
-            <div class="concept-block">
-                <div class="concept-marker">A</div>
-                <div class="concept-content">
-                    <h3>市场先生 · Mr. Market</h3>
-                    <p>格雷厄姆最有名的寓言。想象你和一个情绪不稳的合伙人共享一辆车的产权，他每天给你报一个价，想买你手中的股份或卖给你他的股份。</p>
-                    <p>他有时<em>乐观到荒谬</em>，有时<em>恐惧到可笑</em>。如果你有自己对企业价值的判断，就能利用他的情绪；如果没有，他的情绪就变成了<strong>你的情绪</strong>。</p>
-                    <blockquote>聪明的投资者，是<em>利用市场先生</em>的人；不是被市场先生<em>利用</em>的人。</blockquote>
-                </div>
-            </div>
-
-            <div class="concept-block">
-                <div class="concept-marker">B</div>
-                <div class="concept-content">
-                    <h3>安全边际 · Margin of Safety</h3>
-                    <p>三个不确定性决定了我们必须留出余地：</p>
-                    <ul class="concept-list">
-                        <li><strong>计算的不确定性</strong> —— 任何内在价值的估算都可能错</li>
-                        <li><strong>价格的不确定性</strong> —— 即使好资产也会被错杀</li>
-                        <li><strong>认知的不确定性</strong> —— 投资者自己也会犯错</li>
-                    </ul>
-                    <p>所以买入价要<em>远低于</em>内在价值。折扣越大，你越安全。</p>
-                    <blockquote>安全边际是<em>价值投资的护城河</em>，让判断对了能多赚，判断错了能少亏。</blockquote>
-                </div>
-            </div>
-
-            <div class="concept-block">
-                <div class="concept-marker">C</div>
-                <div class="concept-content">
-                    <h3>防御型 vs 积极型投资者</h3>
-                    <p>格雷厄姆把人分成两类——</p>
-                    <div class="compare-grid">
-                        <div class="compare-card">
-                            <h4>防御型投资者</h4>
-                            <span class="compare-tag">Defensive</span>
-                            <p>不懂生意、不想花时间研究市场的人。目标是<strong>跟上大盘、少犯大错</strong>。</p>
-                            <ul>
-                                <li>股债平衡（25/75 至 75/25 动态调整）</li>
-                                <li>持有<em>10-30 只</em>大型稳健公司股票</li>
-                                <li>定期再平衡</li>
-                                <li>不追涨杀跌</li>
-                            </ul>
-                        </div>
-                        <div class="compare-card">
-                            <h4>积极型投资者</h4>
-                            <span class="compare-tag">Enterprising</span>
-                            <p>愿意花时间、具备分析能力的人。目标是<strong>长期跑赢大盘</strong>。</p>
-                            <ul>
-                                <li>深入研究企业基本面</li>
-                                <li>寻找<em>被低估的优质资产</em></li>
-                                <li>耐心等待市场给你机会</li>
-                                <li>买入即长期持有</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="concept-block">
-                <div class="concept-marker">D</div>
-                <div class="concept-content">
-                    <h3>投资 vs 投机 · Investment vs Speculation</h3>
-                    <p>格雷厄姆划了一条<strong>清晰的边界</strong>：</p>
-                    <ul class="concept-list">
-                        <li><strong>投资</strong> —— 经过充分分析、承诺本金安全、回报合理的操作</li>
-                        <li><strong>投机</strong> —— 凭预感、赌消息、押短期价格波动</li>
-                    </ul>
-                    <p>这条边界<em>不是道德判断</em>，而是<strong>概率判断</strong>——投机长期看是负和游戏，专业选手也很难赢；投资是<em>正期望值</em>的活动。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 选股标准 -->
-        <section class="section section-criteria">
-            <div class="section-head">
-                <span class="section-num">04</span>
-                <h2 class="section-title">防御型投资者选股清单</h2>
-                <span class="section-sub">Stock Selection Criteria</span>
-            </div>
-            <p class="section-intro">这是格雷厄姆给"不想花太多时间研究"的人定下的<strong>硬指标</strong>。七条全部满足，才能进入候选池：</p>
-
-            <div class="criteria-list">
-                <div class="criterion">
-                    <span class="criterion-num">1</span>
-                    <div class="criterion-body">
-                        <h4>适度规模</h4>
-                        <p>工业企业年营收不低于 <strong>1 亿美元</strong>；公用事业企业总资产不低于 <strong>5 亿美元</strong>。足够大才不会被市场忽略或操纵。</p>
-                    </div>
-                </div>
-                <div class="criterion">
-                    <span class="criterion-num">2</span>
-                    <div class="criterion-body">
-                        <h4>财务稳健</h4>
-                        <p>流动比率 <strong>&gt; 2</strong>；长期债务不超过<em>净流动资产</em>。还债压力小，扛得住萧条。</p>
-                    </div>
-                </div>
-                <div class="criterion">
-                    <span class="criterion-num">3</span>
-                    <div class="criterion-body">
-                        <h4>盈利稳定</h4>
-                        <p>过去 <strong>5 年</strong> 每年都有盈利。没有一年亏损。</p>
-                    </div>
-                </div>
-                <div class="criterion">
-                    <span class="criterion-num">4</span>
-                    <div class="criterion-body">
-                        <h4>股息连续</h4>
-                        <p>过去 <strong>20 年</strong> 持续支付股息。长期愿意分钱给股东的公司，不会乱来。</p>
-                    </div>
-                </div>
-                <div class="criterion">
-                    <span class="criterion-num">5</span>
-                    <div class="criterion-body">
-                        <h4>盈利增长</h4>
-                        <p>过去 <strong>5 年</strong> 每股盈利增长 ≥ <em>1/3</em>（约年化 6%）。公司是在往前走的。</p>
-                    </div>
-                </div>
-                <div class="criterion">
-                    <span class="criterion-num">6</span>
-                    <div class="criterion-body">
-                        <h4>适度市盈率</h4>
-                        <p>当前股价 / 过去 12 个月盈利 ≤ <strong>25 倍</strong>。别为高估值支付太多。</p>
-                    </div>
-                </div>
-                <div class="criterion">
-                    <span class="criterion-num">7</span>
-                    <div class="criterion-body">
-                        <h4>适度市净率</h4>
-                        <p>当前股价 / 每股净资产 ≤ <strong>1.5 倍</strong>。给资产溢价，但别太多。</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="formula-card">
-                <span class="formula-label">经典公式 · PE × PB</span>
-                <p class="formula">市盈率 × 市净率 <strong>≤ 22.5</strong></p>
-                <p class="formula-note">两条指标<em>同时</em>满足。一项便宜另一项贵的，不能要。</p>
-            </div>
-        </section>
-
-        <!-- 经典语录 -->
-        <section class="section section-quotes">
-            <div class="section-head">
-                <span class="section-num">05</span>
-                <h2 class="section-title">经典语录</h2>
-                <span class="section-sub">Quotable Wisdom</span>
-            </div>
-            <div class="quotes-list">
-                <blockquote class="quote-item">
-                    <p>"投资这件事有个特点：你越是聪明，越容易掉进陷阱。因为你<strong>过度自信</strong>。"</p>
-                    <cite>— Chapter 1, The Intelligent Investor</cite>
-                </blockquote>
-                <blockquote class="quote-item">
-                    <p>"<strong>最危险的敌人</strong>可能就是你自己的情绪。市场只是给你提供服务，不是指导你。"</p>
-                    <cite>— Chapter 8, Mr. Market</cite>
-                </blockquote>
-                <blockquote class="quote-item">
-                    <p>"<strong>安全边际</strong>不是数学公式，而是<em>心理护栏</em>——它让你不至于因判断错误而被市场淘汰。"</p>
-                    <cite>— Chapter 20, Margin of Safety</cite>
-                </blockquote>
-                <blockquote class="quote-item">
-                    <p>"过去 70 年间，股票在<em>大多数时间</em>都比债券更安全。但人们仍觉得债券更安全，因为<strong>心理上</strong>更容易接受固定收益。"</p>
-                    <cite>— Chapter 2, The Investor vs. The Speculator</cite>
-                </blockquote>
-                <blockquote class="quote-item">
-                    <p>"一只真正出色的公司，不会在<strong>任何价格</strong>上让你舒服——你得等市场把它打趴下。"</p>
-                    <cite>— Chapter 14, Stock Selection for the Defensive Investor</cite>
-                </blockquote>
-            </div>
-        </section>
-
-        <!-- 给现代投资者的启示 -->
-        <section class="section section-lessons">
-            <div class="section-head">
-                <span class="section-num">06</span>
-                <h2 class="section-title">给现代投资者的 10 条启示</h2>
-                <span class="section-sub">Lessons for Today</span>
-            </div>
-            <ol class="lessons-list">
-                <li>
-                    <span class="lesson-num">01</span>
-                    <div>
-                        <h4>把"市场预测"从你的工作清单上划掉</h4>
-                        <p>没有人能持续预测短期走势。把精力放在<em>资产选择</em>而非<em>时机选择</em>上。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">02</span>
-                    <div>
-                        <h4>建立你的<em>安全边际</em>习惯</h4>
-                        <p>不是买便宜货，而是<strong>为不确定性留余地</strong>。这条原则适用于买房、择业、合伙。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">03</span>
-                    <div>
-                        <h4>接受<em>自己的情绪弱点</em></h4>
-                        <p>恐惧和贪婪不是要"克服"的，而是要<strong>设计应对机制</strong>——分散、定投、清单、再平衡。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">04</span>
-                    <div>
-                        <h4>用<em>清单</em>代替直觉</h4>
-                        <p>七条选股标准就是清单。先有规则，再谈智慧。规则让你在牛市不狂，在熊市不慌。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">05</span>
-                    <div>
-                        <h4>买入<em>企业</em>，不是代码</h4>
-                        <p>每一次买入前问自己："如果股票市场明天关闭 5 年，我还能安心持有吗？"</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">06</span>
-                    <div>
-                        <h4>绝大多数人应该做<em>防御型</em>投资者</h4>
-                        <p>承认自己没那么多时间和能力做研究，是<strong>最聪明的开始</strong>。指数基金定投就赢过大多数人。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">07</span>
-                    <div>
-                        <h4>保持<em>适度分散</em>，但别过度</h4>
-                        <p>10-30 只股票足够。100 只就变指数了，徒增手续费。一只重仓暴雷就能毁掉一切。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">08</span>
-                    <div>
-                        <h4>做<em>长期主义者</em>——但要为短期波动留出心理预算</h4>
-                        <p>长期持有 ≠ 天天不看。格雷厄姆建议你<strong>定期看一次</strong>，但不要每天看 50 次。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">09</span>
-                    <div>
-                        <h4>把<em>股息</em>当稳定性的信号</h4>
-                        <p>长期稳定派息的公司，董事会和现金流通常更健康。但<em>别为了股息</em>买高估值陷阱股。</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="lesson-num">10</span>
-                    <div>
-                        <h4>把<em>最坏情况</em>先想清楚</h4>
-                        <p>投资前问自己："如果接下来一年跌 50%，我能扛过去吗？" 不能，就减仓。永远别借钱炒股。</p>
-                    </div>
-                </li>
-            </ol>
-        </section>
-
-        <!-- 行动清单 -->
-        <section class="section section-action">
-            <div class="action-card">
-                <span class="action-eyebrow">从今天开始</span>
-                <h2 class="action-title">5 件立刻可做的事</h2>
-                <ol class="action-list">
-                    <li><strong>建一张清单</strong> —— 把格雷厄姆的 7 条选股标准抄下来，贴在显眼处</li>
-                    <li><strong>算一次内在价值</strong> —— 选一只你持有的股票，试着估算它的"合理价"</li>
-                    <li><strong>做一次再平衡</strong> —— 检查一下股债比例，偏离目标就调整</li>
-                    <li><strong>删掉看盘 App</strong> —— 给自己一个月不开盘体验，让情绪降噪</li>
-                    <li><strong>读这本书</strong> —— 第 8 章"市场先生"和第 20 章"安全边际"是必读</li>
-                </ol>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-mark">
-                <span class="footer-mark-text">The Intelligent Investor</span>
-                <span class="footer-mark-sub">聪明的投资者 · 阅读笔记</span>
-            </div>
-            <div class="footer-quote">
-                <p>"在你买入一只股票之前，先想清楚——<em>你是否愿意在它大跌之后持有更多</em>。"</p>
-            </div>
-            <div class="footer-meta">
-                <span>本杰明·格雷厄姆 · 1949 / 1973</span>
-                <span class="footer-divider">·</span>
-                <span>Reading Notes · 2026</span>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<div class="wrap">
+<nav class="topnav"><span class="logo">SHUFANG · 书房</span><span><a href="#vol-i">开始阅读 ↓</a></span></nav>
+  <header class="hero">
+    <h1>书房<span class="dot">·</span>书架</h1>
+    <p class="desc">从商业哲学到智能架构，从人生智慧到产品方案——这里是我的阅读地图与知识图谱。</p>
+    <div class="stats">
+      <div><div class="num">23</div><div class="lbl">知识页面</div></div>
+      <div><div class="num">5</div><div class="lbl">分类领域</div></div>
+    </div>
+  </header>
+  <div class="volhead">
+    <span class="vol">VOL. I</span>
+    <h2>文学与哲学</h2>
+    <span class="count">3 篇</span>
+  </div>
+  <div class="grid">
+      <a class="card" href="books/tianmu-hongchen.html">
+        <span class="tag">豆豆 · 小说</span>
+        <h3>天幕红尘</h3>
+        <p class="blurb">叶子农的“见路不走”哲学——一切从实际出发，不被经验和教条束缚。商业与人生的深层思辨。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/yaoyuan-jiushizhu.html">
+        <span class="tag">豆豆 · 小说</span>
+        <h3>遥远的救世主</h3>
+        <p class="blurb">“文化属性决定命运”——强势文化造就强者，弱势文化造就弱者。丁元英的商战智慧与文化反思。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/ganfa.html">
+        <span class="tag">稻盛和夫 · 经营哲学</span>
+        <h3>干法</h3>
+        <p class="blurb">工作是修行——稻盛和夫的“六项精进”与人生方程式。热爱工作，付出不亚于任何人的努力。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+  </div>
+  <div class="volhead">
+    <span class="vol">VOL. II</span>
+    <h2>商业与投资</h2>
+    <span class="count">8 篇</span>
+  </div>
+  <div class="grid">
+      <a class="card" href="books/fubaba-qiongbaba.html">
+        <span class="tag">罗伯特·清崎 · 财商启蒙</span>
+        <h3>富爸爸穷爸爸</h3>
+        <p class="blurb">资产 vs 负债——重新定义财富认知。穷人为钱工作，富人让钱为自己工作。现金流思维与财务自由之路。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/fubaba-caiwuziyou.html">
+        <span class="tag">罗伯特·清崎 · 财务自由</span>
+        <h3>穷爸爸富爸爸 · 财务自由之路</h3>
+        <p class="blurb">两位父亲的财富观碰撞。ESBI 四象限、被动收入与资产积累——跳出“老鼠赛跑”的财富觉醒之路。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/manbu-huaerjie.html">
+        <span class="tag">伯顿·马尔基尔 · 投资经典</span>
+        <h3>漫步华尔街</h3>
+        <p class="blurb">有效市场假设与指数投资——为什么大多数基金经理跑不赢大盘？理性投资的基石与资产配置智慧。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/manbu-suiji-manbu.html">
+        <span class="tag">伯顿·马尔基尔 · 投资理论</span>
+        <h3>漫步华尔街 · 随机漫步智慧</h3>
+        <p class="blurb">随机漫步理论下的投资哲学。技术分析 vs 基本面分析、个股选择与指数基金——穿越市场噪音的理性之声。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/qiongchali-baodian.html">
+        <span class="tag">查理·芒格 · 投资哲学</span>
+        <h3>穷查理宝典 · 深度解读</h3>
+        <p class="blurb">多元思维模型与逆向思考——查理·芒格的普世智慧。人类误判心理学、能力圈与价值投资的终极心法。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/quanqiu-touzi-jihui.html">
+        <span class="tag">时寒冰 · 宏观趋势</span>
+        <h3>全球视野下的投资机会</h3>
+        <p class="blurb">未来二十年经济大势研判。全球资产配置、地缘政治风险与产业转移——宏观视角下的财富保卫战。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/nawaer-baodian.html">
+        <span class="tag">埃里克·乔根森 · 财富哲学</span>
+        <h3>纳瓦尔宝典</h3>
+        <p class="blurb">财富创造与人生智慧的完美融合。杠杆、专属知识、判断力——构建不靠出卖时间的收入模型。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card" href="books/intelligent-investor.html">
+        <span class="tag">本杰明·格雷厄姆 · 价值投资圣经</span>
+        <h3>聪明的投资者</h3>
+        <p class="blurb">价值投资之父的安全边际、市场先生与防御型投资策略——巴菲特誉为“投资圣经”的传世之作。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+  </div>
+  <div class="volhead">
+    <span class="vol">VOL. III</span>
+    <h2>AI 与技术</h2>
+    <span class="count">6 篇</span>
+  </div>
+  <div class="grid">
+      <a class="card todo-flag" href="books/jiagou-jinjie-ai.html">
+        <span class="tag">张伟伟 · 技术架构</span>
+        <h3>架构能力进阶 + AI 技术落地后端</h3>
+        <p class="blurb">从单体到 AI 架构的五阶段演进；六层 AI 架构设计，20+ 实战案例。AI 时代后端工程师的进阶路线。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/agentic-engineering.html">
+        <span class="tag">学习路径 · 技术体系</span>
+        <h3>Agentic Engineering 架构师学习路径</h3>
+        <p class="blurb">智能体工程的完整学习体系：四层核心技术架构，四阶段学习路径（P1-P4），9 项关键技能。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/agent-design-patterns.html">
+        <span class="tag">设计模式 · 技术总纲</span>
+        <h3>Agent 设计模式</h3>
+        <p class="blurb">AI Agent 的核心设计模式解析。从感知-推理-行动循环到多 Agent 协同，构建智能系统的架构范式。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/agent-six-patterns.html">
+        <span class="tag">工程化指南 · 深度</span>
+        <h3>Agent 设计模式 · 六大模式工程化指南</h3>
+        <p class="blurb">从理论到工程落地的六大 Agent 设计模式。涵盖 ReAct、Tool-use、Multi-Agent 等核心范式。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/agent-core-concepts.html">
+        <span class="tag">概念手册 · 基础</span>
+        <h3>Agent 核心概念解析手册</h3>
+        <p class="blurb">系统梳理 AI Agent 的核心概念体系：感知、推理、规划、记忆、工具使用等基础概念全面解析。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/claude-code.html">
+        <span class="tag">CLAUDE CODE · 工具</span>
+        <h3>Claude Code 架构与应用总结</h3>
+        <p class="blurb">Claude Code 的架构设计与工程应用。AI 编程助手的内部机制与最佳实践指南。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+  </div>
+  <div class="volhead">
+    <span class="vol">VOL. IV</span>
+    <h2>人物与洞察</h2>
+    <span class="count">1 篇</span>
+  </div>
+  <div class="grid">
+      <a class="card todo-flag" href="books/jianghushuo.html">
+        <span class="tag">人物分析 · 财经</span>
+        <h3>姜胡说 · 财经自媒体人分析</h3>
+        <p class="blurb">抖音 300 万粉丝财经博主全面解析。知识星球 7 年运营、三本著作、2100 万获赞的内容创业方法论。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+  </div>
+  <div class="volhead">
+    <span class="vol">VOL. V</span>
+    <h2>产品与方案</h2>
+    <span class="count">5 篇</span>
+  </div>
+  <div class="grid">
+      <a class="card todo-flag" href="books/jingyong-robot.html">
+        <span class="tag">产品方案 · 警用装备</span>
+        <h3>警用机器人 · 攻关方案</h3>
+        <p class="blurb">空地协同、多 Agent 协同作战体系。空中无人机 + 地面机器人 + 云端大脑，警用机器人系统五方攻关方案。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/yingji-zhihui.html">
+        <span class="tag">产品落地页 · 应急指挥</span>
+        <h3>应急指挥调度系统</h3>
+        <p class="blurb">面向应急场景的指挥调度系统产品展示。从接警到处置全流程可视化的智慧应急解决方案。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/yingji-zhihui-v2.html">
+        <span class="tag">产品落地页 V2 · 应急指挥</span>
+        <h3>应急指挥 · 落地页 V2</h3>
+        <p class="blurb">应急指挥调度系统的迭代升级版展示页。优化后的交互体验与视觉呈现，更贴合实战场景。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/petdog.html">
+        <span class="tag">AI 产品 · 儿童陪伴</span>
+        <h3>PetDog · 会长大的小狗</h3>
+        <p class="blurb">8-12 岁儿童桌面陪伴小狗。三层记忆架构、七维人格演化，30 天养成一只专属陪伴小狗。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+      <a class="card todo-flag" href="books/circle-guard.html">
+        <span class="tag">低空安防 · 战术情报</span>
+        <h3>无人机圈层防控平台 · CIRCLE-GUARD</h3>
+        <p class="blurb">低空安全战术情报页。圈层态势 + 多层打击 + 反制助手 3 大模块。AI 大模型驱动的三层立体防控体系。</p>
+        <span class="go">阅读全文 →</span>
+      </a>
+  </div>
+<footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Claude Code 的架构设计与工程应用。AI 编程助手的内部机制与最佳实践指南。">
+<title>Claude Code 架构与应用总结 | 我的书房</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/book.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="topnav"><span class="logo">SHUFANG · 书房</span><span>VOL. III · AI 与技术</span></nav>
+<nav class="booknav"><div style="display:flex;gap:20px;flex-wrap:wrap"><span><a href="agent-core-concepts.html">← Agent 核心概念解析手册</a></span><span><a class="back" href="../index.html">⌂ 书房首页</a></span><span><a href="jianghushuo.html">姜胡说 · 财经自媒体人分析 →</a></span></div></nav>
+  <header class="bookhead">
+    <div class="tag">CLAUDE CODE · 工具</div>
+    <h1>Claude Code 架构与应用总结</h1>
+    <div class="meta">作者：<b>Anthropic</b> · 所属分类：<b>AI 与技术</b></div>
+  </header>
+  <div class="todo-note">⚠ 本篇部分内容为占位框架，凡标注「待补充」的条目均未经确认，不做臆断；后续补充原始资料后完善。</div>
+  <section class="block">
+    <h2>核心内容总结</h2>
+    <p>Claude Code 是 Anthropic 推出的命令行 Agent 式编程助手：以终端为工作面，直接读写代码库、执行命令、提交变更。</p>
+    <p>本篇总结其架构设计与工程应用：Agent 循环（理解任务→探索代码库→制定计划→执行→验证）、工具集（读/写/搜索/执行）、权限与安全模型，以及团队内的最佳实践。</p>
+  </section>
+
+  <section class="block">
+    <h2>主要章节与观点梳理</h2>
+    <ul class="pt-list">
+      <li><b>Agent 循环</b><span>任务理解 → 代码库探索（搜索/读取）→ 计划 → 小步执行 → 自我验证，循环直到完成——与其说是“补全工具”，不如说是“结对工程师”。</span></li>
+      <li><b>工具与执行面</b><span>文件读写、代码检索、Bash 执行等工具的组合，决定了它能承担的任务边界。</span></li>
+      <li><b>权限与安全</b><span>危险命令需要确认、可配置允许清单——把“给 Agent 的权限”当作安全设计问题对待。</span></li>
+      <li><b>最佳实践</b><span>清晰的任务描述、可验证的完成标准、小步提交、CLAUDE.md 之类的项目约定文件。</span></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>关键金句摘录</h2>
+    <ul class="quote-list">
+      <li><p><span class="todo-tag">待补充</span> 暂无可靠原文摘录，待阅读后补充。</p><cite>—— 不编造引文</cite></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>可落地的实践启示</h2>
+    <ol class="act-list">
+      <li>为项目写一份 CLAUDE.md / AGENTS.md：构建命令、代码规范、禁区。</li>
+      <li>给 Agent 的任务附上“如何验证完成”（测试命令/预期输出）。</li>
+      <li>从低风险任务（写测试、重构、文档）开始建立信任曲线。</li>
+      <li>对照原文补全本篇总结细节。</li>
+    </ol>
+  </section>
+
+<footer class="site wrap"><span>© 2026 我的书房 · 阅读地图</span><a href="index.html">← 返回书房首页</a></footer>
+</div>
+</body>
+</html>
